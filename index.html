@@ -168,7 +168,7 @@
             </div>
             <div class="form-group ">
               <label for="number" class="form-label">Moile Number</label>
-              <input  name="number" type="text" class="form-control" id="number" name="number" placeholder="" tabindex="3" pattern="^[78965]\d{9,9}$" setCustomValidity('Please enter 10 digit phone number')"
+              <input  name="number" type="text" class="form-control" id="number" name="number" placeholder="" tabindex="3" pattern="^[78965]\d{9,9}$" oninvalid="setCustomValidity('Please enter 10 digit phone number')"
                 onchange="try{setCustomValidity('')}catch(e){}" required>
              
           </div>
