@@ -68,7 +68,7 @@ const validated ={
     
     function numberCheck(){
         var phnPattern = /^\d{10}$/;
-        var phoneNumber = document.getElementById('phone').value;
+        var phoneNumber = document.getElementById('number').value;
         var phoneAlert = document.getElementById('phone-alert');
         if(phoneNumber == ""){
             validated.phone= false;
