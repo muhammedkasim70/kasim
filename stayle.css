@@ -66,3 +66,8 @@ textarea{
     transform:translateX(0px);
 
 }
+.validate {
+    margin-top: 10px;
+    color: #c2242b;
+    font-size: 1rem;
+  }
