@@ -157,19 +157,21 @@
         <form id="submit-form"   class="form" name="google-sheet">
             <div class="form-group ">
                 <label for="name" class="form-label">Your Name</label>
-                <input  name="name" type="text" class="form-control" id="name" name="name" placeholder="" tabindex="1" required>
+                <input  name="name" type="text" class="form-control" id="name" onkeyup="nameChek()" id="fullname" autocomplete="off" placeholder="Full Name" name="name" required>
+                <p class="validate " id="name-alert"></p>
                 
             </div>
             <div class="form-group ">
                 <label for="email" class="form-label">Your Email</label>
-                <input  name="email" type="email" class="form-control" id="email" name="email" placeholder="" tabindex="2" required onkeydown="validation()">
+                <input  name="email" type="email" class="form-control" id="email" onkeyup="chekEmail()" placeholder="Email Address" autocomplete="off" name="email" required>
+                <p class="validate" id="email-alert"></p>
                 
                 
             </div>
             <div class="form-group ">
               <label for="number" class="form-label">Moile Number</label>
-              <input  name="number" type="text" class="form-control" id="number" name="number" placeholder="" tabindex="3" pattern="^[78965]\d{9,9}$" oninvalid="setCustomValidity('Please enter 10 digit phone number')"
-                onchange="try{setCustomValidity('')}catch(e){}" required>
+              <input  name="number" type="text" class="form-control" id="number" placeholder="" tabindex="3" onkeyup="numberCheck()" class="form-control" id="phone" placeholder="Phone Number" name="phone" required>
+              <p class="validate" id="phone-alert"></p>
              
           </div>
             <div class="form-group ">
